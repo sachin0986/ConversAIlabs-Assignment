@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-
+// Notes List Component
 function NotesList({ notes, onDeleteNote }) {
   const [deletingId, setDeletingId] = useState(null);
   
@@ -15,8 +15,6 @@ function NotesList({ notes, onDeleteNote }) {
       }, 500);
     }
   };
-
-  // // Why useEffect to sync storage → state - Using useEffect in parent component ensures the list always shows the current localStorage data on mount and after updates
   
   if (notes.length === 0) {
     return <p className="text-gray-500 text-center py-8">No notes yet. Add your first note!</p>;
@@ -58,3 +56,5 @@ function NotesList({ notes, onDeleteNote }) {
     </div>
   );
 }
+
+export default NotesList;

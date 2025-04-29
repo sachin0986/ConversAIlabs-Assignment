@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
+// Add Note Component
 function AddNote({ onAddNote }) {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
@@ -83,3 +84,5 @@ function AddNote({ onAddNote }) {
     </div>
   );
 }
+
+export default AddNote;
