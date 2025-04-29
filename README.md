@@ -66,4 +66,4 @@ A clean and responsive note-taking application built with **React.js** and **Tai
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/sachin0986/ConversAIlabs-Assignment.git
-   cd react-notes-app
+   cd ConversAIlabs-Assignment
